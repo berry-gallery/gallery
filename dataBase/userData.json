@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Ahmad",
+    "password": "ah1234",
+    "email": "ahmad10@gmail.com",
+    "location": "jordan"
+  },
+
+  {
+    "name": "mohammad",
+    "password": "m36567",
+    "email": "moh2020@gmail.com",
+    "location": "jordan"
+  },
+  {
+    "name": "omar",
+    "password": "om6567",
+    "email": "omar323@gmail.com",
+    "location": "jordan"
+  }
+]
