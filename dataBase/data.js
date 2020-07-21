@@ -22,6 +22,7 @@ const UserSchema = new Schema({
   name: { type: String, required: [true, "can't be blank"] },
   email: { type: String, required: [true, "can't be blank"], unique: true },
   password: { type: String, required: [true, "can't be blank"] },
+  mobile: { type: Number, required: true },
   location: { type: String, required: false },
   img: { type: String, required: false },
 });
@@ -31,7 +32,7 @@ const ArtWorkSchema = new Schema({
   description: { type: String, required: true },
   price: { type: Number, required: true },
   img: { type: String, required: true },
-//  categ:
+  //  categ:
 });
 
 var User = mongoose.model("users", UserSchema);
@@ -39,5 +40,3 @@ var Art = mongoose.model("users", ArtWorkSchema);
 
 module.exports = User;
 module.exports = Art;
-
-
