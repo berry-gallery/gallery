@@ -25,10 +25,10 @@ export default class SignUp extends Component {
 
   handleSubmit(event) {
     const { name, email, password,mobile } = this.state;
-
+  
     axios
       .post(
-        "http://localhost:5000/signUp",
+        "http://localhost:5000/SignUp",
         {
           user: {
             name:name,  
@@ -48,11 +48,18 @@ export default class SignUp extends Component {
         console.log("registration error", error);
       });
     event.preventDefault();
-
-       render() {
+    }
+       render(){
       return (
       <div>
         <form onSubmit={this.handleSubmit}>
+        <br></br>
+
+          <h2>Sing Up page</h2>
+        <br></br>
+        <br></br>
+
+        <label for="fullname">Full Name: </label>
         <input
             type="name"
             name="name"
@@ -61,7 +68,10 @@ export default class SignUp extends Component {
             onChange={this.handleChange}
             required
           />
+                    <br></br>
+                    <br></br>
 
+         <label for="email">Email: </label>
           <input
             type="email"
             name="email"
@@ -70,7 +80,10 @@ export default class SignUp extends Component {
             onChange={this.handleChange}
             required
           />
+                    <br></br>
+                    <br></br>
 
+           <label for="password">Password: </label>
           <input
             type="password"
             name="password"
@@ -79,7 +92,10 @@ export default class SignUp extends Component {
             onChange={this.handleChange}
             required
           />
+                    <br></br>
 
+          <br></br>
+          <label for="mobile">Mobile No.: </label>
           <input
             type="mobile"
             name="mobile"
@@ -88,10 +104,12 @@ export default class SignUp extends Component {
             onChange={this.handleChange}
             required
           />
+          <br></br>
+          <br></br>
 
           <button type="submit">Sign Up</button>
         </form>
       </div>
     );
   }
-} }
+} 

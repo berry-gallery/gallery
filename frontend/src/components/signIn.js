@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import axios from "axios";
 
 export default class SignIn extends Component {
@@ -8,7 +9,7 @@ export default class SignIn extends Component {
     this.state = {
       email: "",
       password: "",
-      loginErrors: ""
+      loginErrors: "",
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,7 +18,7 @@ export default class SignIn extends Component {
 
   handleChange(event) {
     this.setState({
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   }
 
@@ -26,21 +27,21 @@ export default class SignIn extends Component {
 
     axios
       .post(
-        "http://localhost:3000/sessions",
+        "http://localhost:5000/sessions",
         {
           user: {
             email: email,
-            password: password
-          }
+            password: password,
+          },
         },
         { withCredentials: true }
       )
-      .then(response => {
+      .then((response) => {
         if (response.data.logged_in) {
           this.props.handleSuccessfulAuth(response.data);
         }
       })
-      .catch(error => {
+      .catch((error) => {
         console.log("login error", error);
       });
     event.preventDefault();
@@ -50,6 +51,9 @@ export default class SignIn extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
+          <br></br>
+          <br></br>
+          <label for="email">Email: </label>
           <input
             type="email"
             name="email"
@@ -58,6 +62,9 @@ export default class SignIn extends Component {
             onChange={this.handleChange}
             required
           />
+
+          <br></br>
+          <br></br>
 
           <input
             type="password"
@@ -68,7 +75,9 @@ export default class SignIn extends Component {
             required
           />
 
-          <button type="submit">signin</button>
+          <br></br>
+          <br></br>
+          <button type="submit">Sign In</button>
         </form>
       </div>
     );

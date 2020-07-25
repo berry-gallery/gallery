@@ -1,9 +1,15 @@
 const mongoose = require("mongoose");
 const express = require("express");
 const user = require("./routes/user");
-const bodyParser = require("body-parser");
-const InitiateMongoServer = require("./config/db");//as tutorial do 
+//import React from 'react';
+/*import ReactDOM from 'react-dom';
+import App from './App';*/
 
+//ReactDOM.render(<App />, document.getElementById("app"));
+
+const bodyParser = require("body-parser");
+//const InitiateMongoServer = require("./config/db");//as tutorial do
+//const config = require('../config/config');
 // Initiate Mongo Server //tutorial
 
 //InitiateMongoServer();
@@ -17,17 +23,16 @@ require("dotenv").config();
 // Middleware
 app.use(bodyParser.json());
 
-app.get("/", (req,res) =>{
-  res.json({ message :"API Working"});
-})
+// app.get("/", (req, res) => {
+//   res.json({ message: "data base working" });
+// });
 
 app.use("/user", user);
 
+const mongoURI = "mongodb+srv://berry:berry123@gallerycluster.9kcs4.mongodb.net/gallerycluster?retryWrites=true&w=majority"
 
-
-const mongoURI = process.env.ATLAS_URI;
-
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose
+  .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("DataBase connected to the server"))
   .catch((err) => console.log(err));
 

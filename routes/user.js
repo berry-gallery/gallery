@@ -6,7 +6,7 @@ const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
-const User = require("../models/User");//what should i put here instead of /models /user....
+//const User = require("../routes//user.js");//what should i put here instead of /models /user....
 
 users.use(cors());
 require("dotenv").config();
