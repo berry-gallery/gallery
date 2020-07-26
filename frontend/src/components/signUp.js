@@ -28,7 +28,7 @@ export default class SignUp extends Component {
   
     axios
       .post(
-        "http://localhost:5000/SignUp",
+        "http://localhost:5000/signUp",
         {
           user: {
             name:name,  

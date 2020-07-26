@@ -27,7 +27,7 @@ export default class SignIn extends Component {
 
     axios
       .post(
-        "http://localhost:5000/sessions",
+        "http://localhost:5000/signIn",
         {
           user: {
             email: email,
@@ -65,7 +65,7 @@ export default class SignIn extends Component {
 
           <br></br>
           <br></br>
-
+          <label for="password">Password: </label>
           <input
             type="password"
             name="password"
@@ -83,3 +83,4 @@ export default class SignIn extends Component {
     );
   }
 }
+

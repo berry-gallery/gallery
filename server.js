@@ -23,13 +23,23 @@ require("dotenv").config();
 // Middleware
 app.use(bodyParser.json());
 
-// app.get("/", (req, res) => {
-//   res.json({ message: "data base working" });
-// });
+app.get("/", (req, res) => {
+  res.json({ message: "data base working" });
+});
+
+app.post("/signUp", function (req, res) {
+  var signupData = req.body;
+  console.log("req test",req.body)
+  db.collection.insertOne(signupData, (err, data) => {
+    console.log("data test",data)
+        res.send(data);
+  });
+});
 
 app.use("/user", user);
 
-const mongoURI = "mongodb+srv://berry:berry123@gallerycluster.9kcs4.mongodb.net/gallerycluster?retryWrites=true&w=majority"
+const mongoURI =
+  "mongodb+srv://berry:berry123@gallerycluster.9kcs4.mongodb.net/gallerycluster?retryWrites=true&w=majority";
 
 mongoose
   .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
