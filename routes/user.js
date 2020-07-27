@@ -110,4 +110,4 @@ users.post(
     }
 );
 
-module.exports = users;
+module.exports = user;

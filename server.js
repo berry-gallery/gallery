@@ -1,27 +1,29 @@
 const mongoose = require("mongoose");
 const express = require("express");
-const user = require("./routes/user");
-//import React from 'react';
-/*import ReactDOM from 'react-dom';
-import App from './App';*/
 
-//ReactDOM.render(<App />, document.getElementById("app"));
-
+const valid = require("express-validator");
+var cors = require("cors");
 const bodyParser = require("body-parser");
+var app = express();
+
 //const InitiateMongoServer = require("./config/db");//as tutorial do
 //const config = require('../config/config');
 // Initiate Mongo Server //tutorial
 
 //InitiateMongoServer();
-
-var app = express();
+//routs path
+//const user = require("./routes/user");
 
 const port = process.env.PORT || 5000;
 
 require("dotenv").config();
+app.use(cors());
 
 // Middleware
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+
+// app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
   res.json({ message: "data base working" });
@@ -29,15 +31,29 @@ app.get("/", (req, res) => {
 
 app.post("/signUp", function (req, res) {
   var signupData = req.body;
-  console.log("req test",req.body)
+  console.log("req test", req.body);
   db.collection.insertOne(signupData, (err, data) => {
-    console.log("data test",data)
-        res.send(data);
+    console.log("data test", data);
+    res.send(data);
   });
 });
 
-app.use("/user", user);
+app.get("/data", function(req, res){
+ Art.findall({}, function(err, arts){
+      if(err){
+          console.log("ERROR!");
+      } else {
+          var categories = ['Fine Art', 'Sculpting']
+          res.render("data", {categories: categories});
+      }
+  });
+});
 
+
+app.get("/data", (req, res) => {
+  res.json({ message: "data base working" });
+});
+//connect to MongoDB
 const mongoURI =
   "mongodb+srv://berry:berry123@gallerycluster.9kcs4.mongodb.net/gallerycluster?retryWrites=true&w=majority";
 

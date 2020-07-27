@@ -3,19 +3,22 @@
     "title": "view",
     " description": "lovely sunset",
     "price": "50$",
-    "img": ""
+    "img": "",
+    "category": "Fine Art"
   },
 
   {
     "title": "sea",
     " description": "beauty of blue ",
     "price": "40$",
-    "img": ""
+    "img": "",
+    "category": "Fine Art"
   },
   {
     "title": "beauty",
     " description": "art work show the beauty in girl face",
     "price": "30$",
-    "img": ""
+    "img": "",
+    "category": "Fine Art"
   }
 ]

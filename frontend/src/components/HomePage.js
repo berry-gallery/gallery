@@ -44,21 +44,23 @@ class HomePage extends Component {
           <table id="category">
             <thead>
               <tr>
+             
                 <th id="heder">categories</th>
               </tr>
             </thead>
             <tbody id="body">
               <tr>
-                <td id="left">category 1</td>
+              <a href="Fine Art">Fine Art</a>
+               
               </tr>
               <tr>
-                <td id="leftC">category 2</td>
+                <a href="Sculpting">Sculpting</a>
               </tr>
               <tr>
-                <td id="rightC">category 3</td>
+                <a href="Ceramics">Ceramics</a>
               </tr>
               <tr>
-                <td id="right">category 4</td>
+                <a href="Empty">Empty</a>
               </tr>
             </tbody>
           </table>

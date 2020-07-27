@@ -18,7 +18,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const UserSchema = new Schema({
+const ArtestSchema = new Schema({
   name: { type: String, required: [true, "can't be blank"] },
   email: { type: String, required: [true, "can't be blank"], unique: true },
   password: { type: String, required: [true, "can't be blank"] },
@@ -32,11 +32,11 @@ const ArtWorkSchema = new Schema({
   description: { type: String, required: true },
   price: { type: Number, required: true },
   img: { type: String, required: true },
-  //  categ:
+  category: { type: String, required: true },
 });
 
-var User = mongoose.model("users", UserSchema);
-var Art = mongoose.model("users", ArtWorkSchema);
+var Artest = mongoose.model("Artest", ArtestSchema);
+var Art = mongoose.model("Art", ArtWorkSchema);
 
-module.exports = User;
+module.exports = Artest;
 module.exports = Art;

@@ -25,7 +25,7 @@ export default class SignUp extends Component {
 
   handleSubmit(event) {
     const { name, email, password,mobile } = this.state;
-  
+    console.log(this.state)
     axios
       .post(
         "http://localhost:5000/signUp",
