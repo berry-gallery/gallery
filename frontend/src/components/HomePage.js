@@ -11,6 +11,18 @@ class HomePage extends Component {
     event.preventDefault();
     alert("Searching Result");
   }
+//make req. for data with spasific id 
+ /* axios
+  .get('/data',(req,res)=>{
+
+ 
+  .then(function (response) 
+    console.log(response);
+  })
+   .catch(function (error) {
+    console.log(error);
+  });
+  });*/
 
   render() {
     return (
@@ -67,7 +79,7 @@ class HomePage extends Component {
         </div>
       </>
     );
-  }
-}
+  };
+};
 
 export default HomePage;
