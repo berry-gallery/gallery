@@ -5,6 +5,8 @@ const valid = require("express-validator");
 var cors = require("cors");
 const bodyParser = require("body-parser");
 var app = express();
+var item = require("../dataBase/data")
+ var Artest = item.Artest ;
 
 //const InitiateMongoServer = require("./config/db");//as tutorial do
 //const config = require('../config/config');
@@ -30,11 +32,22 @@ app.get("/", (req, res) => {
 });
 
 app.post("/signUp", function (req, res) {
-  var signupData = req.body;
-  console.log("req test", req.body);
-  db.collection.insertOne(signupData, (err, data) => {
+  var artestData = new Artest({ 
+    name : req.body.name ,
+    email:req.body.email,
+    password:req.body.password,
+    mobile:req.body.mobile
+  })
+
+  console.log("req test", req.body.name);
+  db.collection.insertOne(artestData, (err, data) => {
+    if(err){
+      console.log(err)
+      console.log("hi")
+    }
     console.log("data test", data);
-    res.send(data);
+    res.save()
+    res.json(data);
   });
 });
 

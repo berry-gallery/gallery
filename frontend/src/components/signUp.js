@@ -18,37 +18,36 @@ export default class SignUp extends Component {
   }
 
   handleChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value
-    });
+    this.setState({name: event.target.value});
   }
 
   handleSubmit(event) {
-    const { name, email, password,mobile } = this.state;
-    console.log(this.state)
+    const  user = {
+      name:this.state.name,  
+      email:this.state.email,
+      password:this.state.password,
+      mobile:this.state.mobile
+    }
+    //console.log(this.state)
     axios
-      .post(
-        "http://localhost:5000/signUp",
-        {
-          user: {
-            name:name,  
-            email: email,
-            password: password,
-            mobile:mobile
-          }
-        },
-        { withCredentials: true }
-      )
-      .then(response => {
-        if (response.data.status === "created") {
-          this.props.handleSuccessfulAuth(response.data);
-        }
-      })
-      .catch(error => {
-        console.log("registration error", error);
-      });
+      .post("http://localhost:5000/signUp",{user})
+       
+          .then((response) => {
+      
+            console.log("hi",response)
+          })
+            .catch(error => {
+              console.log("registration error", error);
+            })
+         
+      
+      
+
+      
+
     event.preventDefault();
     }
+    
        render(){
       return (
       <div>
