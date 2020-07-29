@@ -20,7 +20,7 @@ const ArtWorkSchema = new Schema({
   description: { type: String, required: true },
   price: { type: Number, required: true },
   img: { type: String, required: true },
-  categoryId: { type: Number },
+  category: { type: String },
 });
 
 var Artest = mongoose.model("Artest", ArtestSchema);
