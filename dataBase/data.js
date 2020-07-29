@@ -26,5 +26,5 @@ const ArtWorkSchema = new Schema({
 var Artest = mongoose.model("Artest", ArtestSchema);
 var Art = mongoose.model("Art", ArtWorkSchema);
 
-module.exports = Artest;
-module.exports = Art;
+module.exports = {Artest:Artest,
+   Art:Art};

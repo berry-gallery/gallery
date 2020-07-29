@@ -6,11 +6,10 @@ export default class SignUp extends Component {
     super(props);
 
     this.state = {
-      name:"",  
-      email: "",
-      password: "",
-      mobile:"",
-     
+      // name: "",
+      // email: "",
+      // password: "",
+      // mobile: "",
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -18,48 +17,55 @@ export default class SignUp extends Component {
   }
 
   handleChange(event) {
-    this.setState({name: event.target.value});
+    console.log( event.target.value,"value")
+    console.log( event.target.name,"name")
+    this.state[event.target.name]=event.target.value 
+    console.log(this.state)
+    this.setState(this.state)
+
+    // this.setState({
+    // name: event.target.value,
+    //   email: event.target.value,
+    //   password: event.target.value,
+    //   mobile: event.target.value,
+    // });
   }
 
   handleSubmit(event) {
-    const  user = {
-      name:this.state.name,  
-      email:this.state.email,
-      password:this.state.password,
-      mobile:this.state.mobile
-    }
+    console.log(this.state)
+    // const user = {
+    //   name: this.state.name,
+    //   email: this.state.email,
+    //   password: this.state.password,
+    //   mobile: this.state.mobile,
+    // };
     //console.log(this.state)
+    var that = this
     axios
-      .post("http://localhost:5000/signUp",{user})
-       
-          .then((response) => {
-      
-            console.log("hi",response)
-          })
-            .catch(error => {
-              console.log("registration error", error);
-            })
-         
-      
-      
+      .post("http://localhost:5000/signUp",that.state )
 
-      
+      .then((response) => {
+        console.log("hi", response);
+      })
+      .catch((error) => {
+        console.log("registration error", error);
+      });
 
     event.preventDefault();
-    }
-    
-       render(){
-      return (
+  }
+
+  render() {
+    return (
       <div>
         <form onSubmit={this.handleSubmit}>
-        <br></br>
+          <br></br>
 
           <h2>Sing Up page</h2>
-        <br></br>
-        <br></br>
+          <br></br>
+          <br></br>
 
-        <label for="fullname">Full Name: </label>
-        <input
+          <label for="fullname">Full Name: </label>
+          <input
             type="name"
             name="name"
             placeholder="Full Name"
@@ -67,10 +73,10 @@ export default class SignUp extends Component {
             onChange={this.handleChange}
             required
           />
-                    <br></br>
-                    <br></br>
+          <br></br>
+          <br></br>
 
-         <label for="email">Email: </label>
+          <label for="email">Email: </label>
           <input
             type="email"
             name="email"
@@ -79,10 +85,10 @@ export default class SignUp extends Component {
             onChange={this.handleChange}
             required
           />
-                    <br></br>
-                    <br></br>
+          <br></br>
+          <br></br>
 
-           <label for="password">Password: </label>
+          <label for="password">Password: </label>
           <input
             type="password"
             name="password"
@@ -91,7 +97,7 @@ export default class SignUp extends Component {
             onChange={this.handleChange}
             required
           />
-                    <br></br>
+          <br></br>
 
           <br></br>
           <label for="mobile">Mobile No.: </label>
@@ -111,4 +117,4 @@ export default class SignUp extends Component {
       </div>
     );
   }
-} 
+}
