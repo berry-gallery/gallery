@@ -27,8 +27,9 @@ export default class HomePage extends Component {
   });
   });*/
 
-  axios
-  .get('/data',(req,res)=>{
+  /*axios
+  .get('/data', (req,res)=>{
+
    data.map((artwork) => {
       console.log(artwork.category);
       console.log("artwork", artwork);
@@ -39,10 +40,7 @@ export default class HomePage extends Component {
     .catch((error) => {
       console.log(" error", error);
     });
-  }
-}
-
-
+  }*/
   render() {
     return (
       <>
@@ -104,6 +102,8 @@ export default class HomePage extends Component {
       </>
     );
   }
-}
+
+};
+
 
 export default HomePage;

@@ -87,6 +87,22 @@ app.get("/data", (req, res) => {
 //   });
 // });
 
+
+//PUT request
+app.put("/Profile", function(req, res) {
+  //console.log(req.body);
+  Artest.findOneAndUpdate({name: req.body.name}, {$set:req.body}, {new: true}, function(err, data) {
+      if (err) {
+          res.status(500).send({error: "Could not modify hasp info..."});
+      } else {           
+         //console.log(hasps);
+         res.status(200).send(data);
+      }
+  }); 
+  });
+
+
+  ///
 app.get("/data", (req, res) => {
   res.json({ message: "data base working" });
 });

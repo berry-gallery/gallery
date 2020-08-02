@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import HomePage from "./components/HomePage";
+import Profile from "./components/Profile";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomePage/>
+    <Profile/>
   </React.StrictMode>,
   document.getElementById("root")
 );

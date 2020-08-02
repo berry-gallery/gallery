@@ -16,30 +16,19 @@ export default class SignUp extends Component {
   }
 
   handleChange(event) {
-    console.log( event.target.value,"value")
-    console.log( event.target.name,"name")
-    this.state[event.target.name]=event.target.value 
-    console.log(this.state)
+   // console.log( event.target.value,"value")
+  //  console.log( event.target.name,"name")
+    this.state[event.target.name]= event.target.value 
+   // console.log(this.state)
     this.setState(this.state)
 
-    // this.setState({
-    // name: event.target.value,
-    //   email: event.target.value,
-    //   password: event.target.value,
-    //   mobile: event.target.value,
-    // });
   }
 
   handleSubmit(event) {
-    console.log(this.state)
-    // const user = {
-    //   name: this.state.name,
-    //   email: this.state.email,
-    //   password: this.state.password,
-    //   mobile: this.state.mobile,
-    // };
     //console.log(this.state)
+    
     var that = this
+
     axios
       .post("http://localhost:5000/signUp",that.state )
 
