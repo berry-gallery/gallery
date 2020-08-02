@@ -34,7 +34,7 @@ export default class SignIn extends Component {
             password: password,
           },
         },
-        { withCredentials: true }
+       // { withCredentials: true }
       )
       .then((response) => {
         if (response.data.logged_in) {

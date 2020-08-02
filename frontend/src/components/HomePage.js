@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-//import logo from "./Logo.png";
+import axios from "axios";
 
-class HomePage extends Component {
+
+
+
+export default class HomePage extends Component {
   constructor() {
     super();
     this.submitClick = this.submitClick.bind(this);
@@ -11,8 +14,8 @@ class HomePage extends Component {
     event.preventDefault();
     alert("Searching Result");
   }
-//make req. for data with spasific id 
- /* axios
+  //make req. for data with spasific id
+  /* axios
   .get('/data',(req,res)=>{
 
  
@@ -43,27 +46,32 @@ class HomePage extends Component {
             </label> */}
             <div>
               <ul id="nav">
-                <li><a href="home">Home</a></li>
-                <li><a href="aboutus">About Us</a></li>
-                <li><a href="signup">Sign UP</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li>
+                  <a href="home">Home</a>
+                </li>
+                <li>
+                  <a href="aboutus">About Us</a>
+                </li>
+                <li>
+                  <a href="signup">Sign UP</a>
+                </li>
+                <li>
+                  <a href="contact">Contact</a>
+                </li>
               </ul>
             </div>
             <br></br>
             <br></br>
-            
           </form>
           <table id="category">
             <thead>
               <tr>
-             
                 <th id="heder">categories</th>
               </tr>
             </thead>
             <tbody id="body">
               <tr>
-              <a href="Fine Art">Fine Art</a>
-               
+                <a href="Fine Art">Fine Art</a>
               </tr>
               <tr>
                 <a href="Sculpting">Sculpting</a>
@@ -79,7 +87,7 @@ class HomePage extends Component {
         </div>
       </>
     );
-  };
-};
+  }
+}
 
 export default HomePage;
