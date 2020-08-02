@@ -52,14 +52,11 @@ app.post("/signUp", function (req, res) {
 });
 
 
+
 app.get("/data", (req, res) => {
   ArtWork.find({}, function (err, data) {
     console.log(data.title, "data");
-    // data.map((artwork) => {
-    //   console.log(artwork.category);
-    //   console.log("artwork", artwork);
-    // });/// put it in axios...
-
+    
     if (err) {
             res.json(err);
           } else {

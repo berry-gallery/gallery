@@ -27,6 +27,22 @@ export default class HomePage extends Component {
   });
   });*/
 
+  axios
+  .get('/data',(req,res)=>{
+   data.map((artwork) => {
+      console.log(artwork.category);
+      console.log("artwork", artwork);
+    });
+    .then((response) => {
+      console.log("hi", response);
+    })
+    .catch((error) => {
+      console.log(" error", error);
+    });
+  }
+}
+
+
   render() {
     return (
       <>
