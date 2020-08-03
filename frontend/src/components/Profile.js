@@ -152,15 +152,18 @@ render(){
           </select>
 
 
-      <button type="submit">Save</button>
-      {/*}<Button onClick={this.editItem}>Edit item</Button>
+          <br></br>
+      <br></br>
+      <button type="submit">Save</button><br></br>
+      <button type="edit">Edit</button>
+      {/*<Button onClick={this.editItem}>Edit item</Button>
       <Button onClick={this.saveElement}>Save</Button>*/}
 
     </form>
   </div>
 
 
-
+ 
 
     );
     }
