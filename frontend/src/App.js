@@ -26,10 +26,10 @@ ReactDOM.render((
      <Route path = "/" component = {App}>
         <IndexRoute component = {HomePage} />
         <Route path = "homePage" component = {HomePage}/>
-        <Route path = "aboutUs" component = {AboutUS} />
+        <Route path = "aboutUs" component = {AboutUs} />
         <Route path = "contactUs" component = {ContactUs}/>
         <Route path = "Profile" component = {Profile}/>
-        <Route path = "SignUp" component = {SignUP}/>
+        <Route path = "SignUp" component = {SignUp}/>
         <Route path = "SignIn" component = {SignIn}/>
 
 
