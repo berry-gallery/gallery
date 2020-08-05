@@ -80,12 +80,12 @@ export default function Album() {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-            Ceramic Artwork
+            Painting Artwork
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-            Ceramic art is art made from ceramic materials, including clay.
-            It may take forms including artistic pottery, including tableware, tiles, figurines and other sculpture.
-            As one of the plastic arts, ceramic art is one of the visual arts. While some ceramics are considered fine art.
+            Painting is the practice of applying paint, pigment, color or other medium to a solid surface .
+            The medium is commonly applied to the base with a brush, but other implements,
+            such as knives, sponges, and airbrushes, can be used.
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
@@ -107,18 +107,18 @@ export default function Album() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://www.cazamic.com/wp-content/uploads/2020/07/MrsForgetmenot.jpg"
-                    title="Mrs.Flower"
+                    image="https://i.pinimg.com/564x/bd/b3/39/bdb339d0e84452d23aef60218bcfcff5.jpg"
+                    title="Golden Face"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Mrs.flower
+                      //title
                     </Typography>
                     <Typography>
-                                 Title: Mrs.Flower
-                                 Description :  Blue, Glazed Porcelain .
-                                 Price : 40$
-                                Artist : Carolyn Clayton
+                                 Title: Golden Face
+                                 Description : Golden Fruit, Painting, Acrylic on Canvas (100cm 80cm) .
+                                 Price : 155 $
+                                Artist : Maxime Cousineau
                     </Typography>
                   </CardContent>
                   <CardActions>
