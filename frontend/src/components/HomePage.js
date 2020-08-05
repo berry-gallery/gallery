@@ -197,7 +197,7 @@ const styles = makeStyles((theme) => ({
 }));
 
 function ArtCategories(props) {
- const classes = style();;
+ const classes = styles();;
 
   const images = [
     {
@@ -286,4 +286,4 @@ ProductCategories.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyle(style)(ArtCategories);
+export default withStyles(styles)(ArtCategories);
