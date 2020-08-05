@@ -13,10 +13,10 @@ export default class Profile extends Component {
     
   }
 
-  /*editItem = event => {
+  editItem = event => {
     event.preventDefault();
-    this.props.history.push(`/Profile/${this.state.id}/edit`);
-  } */
+    this.props.history.push(`/Profile/${this.state.id}`);
+  } 
 
 
   updateInput = input => {
@@ -144,7 +144,7 @@ render(){
             name="location"
            
           >
-            <option>Painting</option>
+            <option>Ceramic</option>
             <option>Sculpture</option>
             <option>Painting</option>
             <option>Modern Art</option>
@@ -156,8 +156,8 @@ render(){
       <br></br>
       <button type="submit">Save</button><br></br>
       <button type="edit">Edit</button>
-      {/*<Button onClick={this.editItem}>Edit item</Button>
-      <Button onClick={this.saveElement}>Save</Button>*/}
+      <Button onClick={this.editItem}>Edit item</Button>
+      <Button onClick={this.saveElement}>Save</Button>
 
     </form>
   </div>

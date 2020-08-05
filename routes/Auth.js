@@ -1,3 +1,5 @@
- const express = require('express').Router;
+ const router = require('express').Router;
+ 
+ router.post('/')
 
- router.
+ module.exports =router ;

@@ -6,6 +6,6 @@ export default class AboutUs extends Component {
   }
 }
 
-export default AboutUs;
+//export default AboutUs;
 
 //more will add about the web site and vision .
