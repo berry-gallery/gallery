@@ -12,20 +12,20 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
+//import Link from '@material-ui/core/Link';
 
-function Copyright() {
+/*function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
   );
-}
+}*/
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -71,7 +71,7 @@ export default function Album() {
         <Toolbar>
           <CameraIcon className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap>
-            Ceramic Artwork
+            Paintaing Artwork
           </Typography>
         </Toolbar>
       </AppBar>
@@ -110,14 +110,57 @@ export default function Album() {
                     image="https://i.pinimg.com/564x/bd/b3/39/bdb339d0e84452d23aef60218bcfcff5.jpg"
                     title="Golden Face"
                   />
+                  
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      //title
+                      title
                     </Typography>
                     <Typography>
                                  Title: Golden Face
-                                 Description : Golden Fruit, Painting, Acrylic on Canvas (100cm 80cm) .
+
+                                 Description : [Golden Fruit, Painting, Acrylic on Canvas'
+                                                 Dimensions: H(91.44 cm), W(121.92 cm), D(3.81 cm)]
                                  Price : 155 $
+                                 
+                                Artist : Maxime Cousineau
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Artist Profile
+                    </Button>
+
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+          
+        </Container>
+
+        <Container className={classes.cardGrid} maxWidth="md">
+          {/* End hero unit */}
+          <Grid container spacing={4}>
+            {cards.map((card) => (
+              <Grid item key={card} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://a.1stdibscdn.com/12330573/a_39463821549602376604/18823_de1a4692ec933aca2969ce4bb923301d9396cc60_tG61YM6Zb623W8D8_1_master.jpg?disable=upscale&auto=webp&quality=60&width=960"
+                    title="Golden Face"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      title
+                    </Typography>
+                    <Typography>
+                                 Title: Golden Face
+                         <br></br>
+                                 Description : [Golden Fruit, Painting, Acrylic on Canvas'
+                                                 Dimensions: H(76.2 cm),W(60.96 cm),D(3.81 cm)]
+] <br></br>
+                                 Price : 257 $
+                                 <br></br>
                                 Artist : Maxime Cousineau
                     </Typography>
                   </CardContent>
@@ -132,8 +175,11 @@ export default function Album() {
             ))}
           </Grid>
         </Container>
+
+
       </main>
      
     </React.Fragment>
   );
-}
+} 
+

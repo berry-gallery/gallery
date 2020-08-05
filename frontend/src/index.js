@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 //import SignUP from "./components/ٍSignUp";
 import * as serviceWorker from "./serviceWorker";
-import SignIn from "./components/SignIn";
+import Album from "./components/Painting";
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <SignIn/>
+    < Album/>
   </React.StrictMode>,
   document.getElementById("root")
 );
