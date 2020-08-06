@@ -156,9 +156,7 @@ render(){
       <br></br>
       <button type="submit">Save</button><br></br>
       <button type="edit">Edit</button>
-      <Button onClick={this.editItem}>Edit item</Button>
-      <Button onClick={this.saveElement}>Save</Button>
-
+      
     </form>
   </div>
 
@@ -170,6 +168,8 @@ render(){
 
 }
 
+//<Button onClick={this.editItem}>Edit item</Button>
+//<Button onClick={this.saveElement}>Save</Button>}
 
 
 

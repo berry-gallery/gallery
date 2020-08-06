@@ -1,4 +1,7 @@
 const mongoose = require("mongoose");
+const artdata = require("./artData.json");
+
+
 
 const Schema = mongoose.Schema;
 

@@ -1,40 +1,42 @@
 import React from "react";
-//import logo from "./logo.svg";
 import "./App.css";
-import ReactDOM from 'react-dom';
-//import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
-import Profile from './components/Profile' ;
+import { BrowserRouter as Router, Route } from "react-router-dom";
+//import  ButtonAppBar from './NavBar';
 
-// import SignUp from './components/SignUP' ;
-// import SignIn from './components/SignIn' ;
-// import HomePage from './components/HomePage' ;
-// import AboutUs from './components/AboutUs' ;
-// import ContactUs from './components/ContactUs' ;
+import HomePage from './components/HomePage' ;
+import SignUp from './components/SignUp' ;
+import SignIn from './components/SignIn' ;
+import Profile from './components/Profile' ;
+import AboutUs from './components/AboutUs' ;
+import ContactUs from './components/contactUs' ;
+import Ceramic from './components/Ceramic' ;
+import Painting from './components/Painting' ;
+import ModernArt from './components/ModernArt' ;
+import Sculpture from './components/Sculpture' ;
+
 
 
 function App() {
   return (
-    <div >
-     <h1>App</h1> 
-     router.app('/login'),
+    <Router>
+      <div>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/SignIn" exact component={SignIn} />
+        <Route path="/SignUp" component={SignUp} />
+        <Route path="/Profile" component={Profile} />
+        <Route path="/AboutUs" component={AboutUs} />
+        <Route path="/ContactUs" component={ContactUs} />
+        <Route path="/Sculpture" component={Sculpture} />
+        <Route path="/Painting" component={Painting} />
+        <Route path="/Ceramic" component={Ceramic} />
+        <Route path="/ModernArt" component={ModernArt} />
 
-    </div>
+      </div>
+    </Router>
   );
 }
-// ReactDOM.render((
-//   <Router history = {browserHistory}>
-//      <Route path = "/" component = {App}>
-//         <IndexRoute component = {HomePage} />
-//         <Route path = "homePage" component = {HomePage}/>
-//         <Route path = "aboutUs" component = {AboutUs} />
-//         <Route path = "contactUs" component = {ContactUs}/>
-//         <Route path = "Profile" component = {Profile}/>
-//         <Route path = "SignUp" component = {SignUp}/>
-//         <Route path = "SignIn" component = {SignIn}/>
 
-
-//      </Route>
-//   </Router>
-// ), document.getElementById('app'))
 
 export default App;
+
+

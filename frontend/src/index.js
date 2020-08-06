@@ -3,12 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 //import SignUP from "./components/ٍSignUp";
 import * as serviceWorker from "./serviceWorker";
-import SignIn from "./components/SignIn";
+//import SignIn from "./components/SignIn";
+import App from "./App";
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    < SignIn/>
+    < App/>
   </React.StrictMode>,
   document.getElementById("root")
 );
@@ -17,3 +19,4 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
