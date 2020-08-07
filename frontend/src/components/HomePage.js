@@ -198,40 +198,50 @@ function ArtCategories(props) {
       url:
         "https://images.pexels.com/photos/1102292/pexels-photo-1102292.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       title: "Ceramic",
-      width: "40%",
+      width: "50%",
       purl: "./Ceramic",
     },
     {
       url:
         "https://images.pexels.com/photos/2900935/pexels-photo-2900935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       title: "Painting",
-      width: "20%",
+      width: "50%",
       purl: "Painting",
     },
     {
       url:
         "https://i.pinimg.com/564x/95/9b/d3/959bd3dd4341c37904b4c715fcdee3c6.jpg",
       title: "Modern Art",
-      width: "40%",
+      width: "50%",
       purl: "./Modern Art",
     },
     {
       url:
         "https://images.pexels.com/photos/3738123/pexels-photo-3738123.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       title: "Sculpture",
-      width: "38%",
+      width: "50%",
       purl: "./Sculpture",
+    },
+    {
+      url:
+        "https://images.pexels.com/photos/3139298/pexels-photo-3139298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      title: "Calligraphy",
+      width: "50%",
+      purl: "./Calligraphy",
     },
   ];
 
   return (
-    <div>
+    <div className="n">
       <HomePageHeader />
       <Container className={classes.root} component="section">
-        <Typography variant="h4" marked="center" align="center" component="h2">
-          Fine Art Category
+        <Typography variant="h3" marked="center" align="center" component="h2">
+          Fine Art Categories
         </Typography>
         <br />
+        <Typography color="inherit" align="center" variant="h6" className={classes.h6}>
+        Enjoy Beauty of Art
+      </Typography>
         <br />
         <div className={classes.images}>
           {images.map((image) => (

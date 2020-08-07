@@ -1,24 +1,589 @@
 [
   {
-    "title": "view",
-    " description": "lovely sunset",
-    "price": "50$",
-    "img": "",
-    "category": "Fine Art"
+    "title": "Watering Can",
+
+    " description": "ceramic glazed watering can",
+
+    "price": "70$",
+
+    "img": "https://i.pinimg.com/564x/01/76/9a/01769adf7881323648fdb22ef0347914.jpg",
+
+    "category": "ceramic"
   },
 
   {
-    "title": "sea",
-    " description": "beauty of blue ",
-    "price": "40$",
-    "img": "",
-    "category": "Fine Art"
+    "title": "Tabletop Vase",
+
+    " description": "ceramic Tabletop Vase ",
+
+    "price": "300$",
+
+    "img": "https://i.pinimg.com/564x/ed/f1/7a/edf17a8566ceb7aedef23620694ec2c1.jpg",
+
+    "category": "ceramic"
+  },
+
+  {
+    "title": "Golden touch",
+
+    " description": "ceramic Tabletop Vase ",
+
+    "price": "300$",
+
+    "img": "https://i.pinimg.com/564x/35/84/ab/3584ab9f3a736adbcfccd2eb50f7afc8.jpg",
+
+    "category": "ceramic"
+  },
+
+  {
+    "title": "flowral vas",
+
+    " description": "ceramic Tabletop Vase ",
+
+    "price": "350$",
+
+    "img": "https://i.pinimg.com/564x/f8/6b/92/f86b927149fd35bf84d98200ec926a80.jpg",
+
+    "category": "ceramic"
+  },
+
+  {
+    "title": "Peral vas",
+
+    " description": "ceramic Tabletop Vase ",
+
+    "price": "350$",
+
+    "img": "https://i.pinimg.com/564x/44/b4/69/44b46917b91dbd470e67a4db303acc87.jpg",
+
+    "category": "ceramic"
+  },
+
+  {
+    "title": "Peral dishes",
+
+    " description": "ceramic dishes ",
+
+    "price": "100$",
+
+    "img": "https://i.pinimg.com/564x/5d/5b/e6/5d5be600228f82ee5116949dfd3fa591.jpg",
+
+    "category": "ceramic"
+  },
+
+  {
+    "title": "Dinner plate",
+
+    " description": "ceramic Dinner plate ",
+
+    "price": "100$",
+
+    "img": "https://i.pinimg.com/236x/46/fd/da/46fddad61439b044e1ced6d48fb31e9c.jpg",
+
+    "category": "ceramic"
+  },
+
+  {
+    "title": "Tea cup collection",
+
+    " description": "ceramic Tea collection ",
+
+    "price": "150$",
+
+    "img": "https://i.pinimg.com/564x/c6/27/82/c6278270ce787694833ed409fd7bf482.jpg",
+
+    "category": "ceramic"
   },
   {
-    "title": "beauty",
-    " description": "art work show the beauty in girl face",
+    "title": "carl vas",
+
+    " description": "ceramic big vas ",
+
+    "price": "220$",
+
+    "img": "https://i.pinimg.com/564x/83/dd/09/83dd0998d62860969a99caabe4fda215.jpg",
+
+    "category": "ceramic"
+  },
+
+  {
+    "title": "Flowral vas collection",
+
+    " description": "ceramic Flowral vas ",
+
+    "price": "220$",
+
+    "img": "https://i.pinimg.com/564x/9c/ae/60/9cae60494760692ac812ebd0e541fbf6.jpg",
+
+    "category": "ceramic"
+  },
+
+  {
+    "title": "Bowl",
+
+    " description": "Crystalline Glazed Bowl ",
+
+    "price": "50$",
+
+    "img": "https://i.pinimg.com/564x/b6/cc/5f/b6cc5f77893e1608e7f7b51b387d196c.jpg",
+
+    "category": "ceramic"
+  },
+
+  {
+    "title": "Illustrated Ceramics",
+
+    " description": "art work show many delightful illustrated ceramics",
+
+    "price": "40$",
+
+    "img": "https://i.pinimg.com/564x/32/6d/f7/326df760403c548b0409f33cf30d0774.jpg",
+
+    "category": "ceramic"
+  },
+  {
+    "title": "Beutiful Paint",
+
+    " description": "Oil painting",
+
+    "price": "100$",
+
+    "img": "https://i.pinimg.com/564x/bb/0c/b9/bb0cb9d46260f9189d5078f36a090c2a.jpg",
+
+    "category": "Painting"
+  },
+  {
+    "title": "Man on Bridge",
+
+    " description": "Oil painting",
+
+    "price": "80$",
+
+    "img": "https://i.pinimg.com/564x/bc/2a/30/bc2a305230d426655f1f82defdbdfe99.jpg",
+
+    "category": "Painting"
+  },
+  {
+    "title": "Landscape",
+
+    " description": "Oil painting",
+
+    "price": "60$",
+
+    "img": "https://i.pinimg.com/564x/96/f3/aa/96f3aac56d512a4c71b74e4dd5a6bd82.jpg",
+
+    "category": "Painting"
+  },
+  {
+    "title": "House",
+
+    " description": "Oil painting",
+
+    "price": "65$",
+
+    "img": "https://i.pinimg.com/564x/48/e4/b4/48e4b4c7b662687b55fd4d8e4e826840.jpg",
+
+    "category": "Painting"
+  },
+  {
+    "title": "Lotus Flowers",
+
+    " description": "Watercolor Painting",
+
     "price": "30$",
-    "img": "",
-    "category": "Fine Art"
+
+    "img": "https://i.pinimg.com/564x/1d/17/f4/1d17f4a6f402d53a84250eb20e918513.jpg",
+
+    "category": "Painting"
+  },
+  {
+    "title": "Old House",
+
+    " description": "Watercolor Painting",
+
+    "price": "45$",
+
+    "img": "https://i.pinimg.com/564x/0a/36/f4/0a36f44597a2672eb35e557425df4683.jpg",
+
+    "category": "Painting"
+  },
+  {
+    "title": "SUNRISE AT MISTY LAKE",
+
+    " description": "Oil Painting",
+
+    "price": "65$",
+
+    "img": "https://i.pinimg.com/564x/4f/4a/00/4f4a00c73c16b4a46d54b3f66b50dbfd.jpg",
+
+    "category": "Painting"
+  },
+  {
+    "title": "Mountain landscape",
+
+    " description": "Oil Painting",
+
+    "price": "40$",
+
+    "img": "https://i.pinimg.com/564x/b0/b3/9e/b0b39e90694bb933b34d4ee2f1d44c3a.jpg",
+
+    "category": "Painting"
+  },
+  {
+    "title": "Face",
+
+    " description": "Abstract",
+
+    "price": "50$",
+
+    "img": "https://i.pinimg.com/564x/f7/dd/6c/f7dd6cc0087a10f9013827623ab50e67.jpg",
+
+    "category": "ModernArt"
+  },
+  {
+    "title": "Glass",
+
+    " description": "Abstract",
+
+    "price": "40$",
+
+    "img": "https://i.pinimg.com/564x/b2/a1/04/b2a104d24bc1fd8bbf08f2a5dc213eb6.jpg",
+
+    "category": "ModernArt"
+  },
+  {
+    "title": "Home Style",
+
+    " description": "Pink Oil",
+
+    "price": "40$",
+
+    "img": "https://i.pinimg.com/564x/47/de/2e/47de2ebd613a3a9b7d075ab1f00ddd07.jpg",
+
+    "category": "ModernArt"
+  },
+  {
+    "title": "Face",
+
+    " description": "Face Oil Painting",
+
+    "price": "45$",
+
+    "img": "https://i.pinimg.com/564x/39/58/27/395827065df29a894a1519a45197ad84.jpg",
+
+    "category": "ModernArt"
+  },
+  {
+    "title": "Modern Art",
+
+    " description": "Oil Painting",
+
+    "price": "60$",
+
+    "img": "https://i.pinimg.com/564x/96/42/0e/96420eec4b4562751ad85a3f39820158.jpg",
+
+    "category": "ModernArt"
+  },
+  {
+    "title": "Sunrise",
+
+    " description": "Sunrise Abstract Art",
+
+    "price": "60$",
+
+    "img": "https://i.pinimg.com/564x/15/64/4d/15644d549dd598fcc4189f4e30781be6.jpg",
+
+    "category": "ModernArt"
+  },
+  {
+    "title": "Colors",
+
+    " description": "Modern Abstract",
+
+    "price": "80$",
+
+    "img": "https://i.pinimg.com/564x/59/0d/75/590d75ffed6c7669d5171ce60938f96c.jpg",
+
+    "category": "ModernArt"
+  },
+  {
+    "title": "Blue Round Painting",
+
+    " description": "Modern Abstract",
+
+    "price": "75$",
+
+    "img": "https://i.pinimg.com/564x/2c/0a/e7/2c0ae775c1c9b248f90802dd67f391c0.jpg",
+
+    "category": "ModernArt"
+  },
+  {
+    "title": "Mixed Color",
+
+    " description": "Modern Abstract",
+
+    "price": "90$",
+
+    "img": "https://i.pinimg.com/564x/b6/d2/73/b6d2735c6cbe5308edbf8e36df3bc90d.jpg",
+
+    "category": "ModernArt"
+  },
+  {
+    "title": "sea",
+
+    " description": "Modern Abstract",
+
+    "price": "90$",
+
+    "img": "https://i.pinimg.com/564x/a1/f1/83/a1f18311cd5ebe92db1ea72fa2522b87.jpg",
+
+    "category": "ModernArt"
+  },
+  {
+    "title": "virtual sculpture",
+
+    " description": "sculpture",
+
+    "price": "70$",
+
+    "img": "https://i.pinimg.com/564x/1c/fc/2d/1cfc2d5698c4f27f179048bced761262.jpg",
+
+    "category": "sculpture"
+  },
+  {
+    "title": "Out from wall",
+
+    " description": "sculpture",
+
+    "price": "60$",
+
+    "img": "https://i.pinimg.com/236x/13/93/4e/13934e4a9440e400b6df13a7c2a08cd9.jpg",
+
+    "category": "sculpture"
+  },
+  {
+    "title": "Mother's Care",
+
+    " description": "sculpture",
+
+    "price": "80$",
+
+    "img": "https://i.pinimg.com/564x/0a/92/50/0a92504f4b30234946726298095db4a0.jpg",
+
+    "category": "sculpture"
+  },
+  {
+    "title": "Mother's Love",
+
+    " description": "sculpture",
+
+    "price": "80$",
+
+    "img": "https://i.pinimg.com/564x/e1/0d/28/e10d283a1604be7ecea64ba062554d06.jpg",
+
+    "category": "sculpture"
+  },
+  {
+    "title": "Mother's Love",
+
+    " description": "sculpture",
+
+    "price": "60$",
+
+    "img": "https://i.pinimg.com/564x/4f/dd/5b/4fdd5bf55e087823e2686c7aaf779e99.jpg",
+
+    "category": "sculpture"
+  },
+  {
+    "title": "Sad",
+
+    " description": "Wood sculpture",
+
+    "price": "80$",
+
+    "img": "https://i.pinimg.com/564x/3f/25/99/3f2599567f8e0d8cee1ca7cede720876.jpg",
+
+    "category": "sculpture"
+  },
+  {
+    "title": "Think",
+
+    " description": "Wood Carving in Ghana",
+
+    "price": "65$",
+
+    "img": "https://i.pinimg.com/564x/da/93/ae/da93aeec42ec6bf34397802c3598a921.jpg",
+
+    "category": "sculpture"
+  },
+  {
+    "title": "Indivisual Love",
+
+    " description": "Wood sculpture",
+
+    "price": "90$",
+
+    "img": "https://i.pinimg.com/564x/c3/f2/1f/c3f21ff259966d0f2d86d2aeb1b37647.jpg",
+
+    "category": "sculpture"
+  },
+
+  {
+    "title": "Pink Daisy Lady",
+
+    " description": "ceramic sculpture",
+
+    "price": "50$",
+
+    "img": "https://www.cazamic.com/wp-content/uploads/2018/03/PinkDaisyLady.jpg",
+
+    "category": "sculpture"
+  },
+
+  {
+    "title": "Wild Lady Looking Glass",
+
+    " description": "ceramic sculpture",
+
+    "price": "50$",
+
+    "img": "https://www.cazamic.com/wp-content/uploads/2016/12/wildladylookingglass.jpg",
+
+    "category": "sculpture"
+  },
+  {
+    "title": "Little Miss Anastasia",
+
+    " description": "ceramic sculpture",
+
+    "price": "50$",
+
+    "img": "https://www.cazamic.com/wp-content/uploads/2016/05/Little-Miss-Anastasia.jpg",
+
+    "category": "sculpture"
+  },
+
+  {
+    "title": "Purple Angel Meditating On Top of World",
+
+    " description": "ceramic sculpture",
+
+    "price": "70$",
+
+    "img": "https://www.cazamic.com/wp-content/uploads/2020/06/PurpleAngelGerberaMeditatingOnTopofWorld.jpg",
+
+    "category": "sculpture"
+  },
+  {
+    "title": "Lady Daffodil with Butterfly",
+
+    " description": "ceramic sculpture",
+
+    "price": "90$",
+
+    "img": "https://i.pinimg.com/564x/47/31/aa/4731aa9f1c53f8a4d03189fda80b267e.jpg",
+
+    "category": "sculpture"
+  },
+  {
+    "title": "Islamic Calligraphy",
+
+    " description": "Aclaryic on canvas",
+
+    "price": "50$",
+
+    "img": "https://i.pinimg.com/564x/7e/fd/70/7efd70eb4ec1181bdf806932bd563f13.jpg",
+
+    "category": "Calligraphy"
+  },
+  {
+    "title": "Islamic Calligraphy",
+
+    " description": "Aclaryic on canvas",
+
+    "price": "70$",
+
+    "img": "https://i.pinimg.com/564x/3e/d9/14/3ed914570f12a0ea76d247f7c153fae9.jpg",
+
+    "category": "Calligraphy"
+  },
+  {
+    "title": "Islamic Calligraphy",
+
+    " description": "Aclaryic on canvas",
+
+    "price": "70$",
+
+    "img": "https://i.pinimg.com/564x/e3/c9/36/e3c93626f981d75a66d6ce230f14bcbf.jpg",
+
+    "category": "Calligraphy"
+  },
+  {
+    "title": "Islamic Calligraphy",
+
+    " description": "Aclaryic on canvas",
+
+    "price": "70$",
+
+    "img": "https://i.pinimg.com/564x/e3/c9/36/e3c93626f981d75a66d6ce230f14bcbf.jpg",
+
+    "category": "Calligraphy"
+  },
+  {
+    "title": "Arabic Calligraphy",
+
+    " description": "Aclaryic on canvas",
+
+    "price": "70$",
+
+    "img": "https://i.pinimg.com/564x/7b/9e/60/7b9e602eff55b11940744c28e150ffaf.jpg",
+
+    "category": "Calligraphy"
+  },
+  {
+    "title": "Arabic Calligraphy",
+
+    " description": "Aclaryic on canvas",
+
+    "price": "70$",
+
+    "img": "https://i.pinimg.com/564x/34/20/b0/3420b05d982f4ad5b5bb44c999537657.jpg",
+
+    "category": "Calligraphy"
+  },
+  {
+    "title": "Arabic Calligraphy",
+
+    " description": "Aclaryic on canvas",
+
+    "price": "70$",
+
+    "img": "https://i.pinimg.com/564x/35/70/3c/35703c3c16f61e288028c7fef9ea4b04.jpg",
+
+    "category": "Calligraphy"
+  },
+
+  {
+    "title": "Islamic Calligraphy",
+
+    " description": "Aclaryic on canvas",
+
+    "price": "70$",
+
+    "img": "https://i.pinimg.com/564x/b8/e9/a0/b8e9a0001e1b53bd960e213c1bfadf74.jpg",
+
+    "category": "Calligraphy"
+  },
+
+  {
+    "title": "Islamic Calligraphy",
+
+    " description": "Aclaryic on canvas",
+
+    "price": "70$",
+
+    "img": "https://i.pinimg.com/564x/92/cc/b1/92ccb1be605493bdc5778b1490bc131f.jpg",
+
+    "category": "Calligraphy"
   }
 ]

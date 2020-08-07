@@ -1,14 +1,17 @@
+
+////////////////////////////********** */
+
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-export default class Sculpture extends Component {
+export default class Calligraphy extends Component {
   constructor(props) {
 
     super(props);
     
     this.state = {
-      sculptures: [],
+      ceramics: [],
     };
   }
 
@@ -16,9 +19,9 @@ export default class Sculpture extends Component {
     const that = this;
 
     axios
-      .get("http://localhost:5000/Sculpture/")
+      .get("http://localhost:5000/Calligraphy/")
       .then((response) => {
-        that.setState({ sculptures: response.data });
+        that.setState({ Calligraphys: response.data });
       })
       .catch((err) => {
         console.log(err);
@@ -26,12 +29,12 @@ export default class Sculpture extends Component {
   }
 
   render() {
-    const sculpture = this.state.sculptures;
+    const Calligraphy = this.state.Calligraphys;
 
     return (
       <div>
         <section className="category">
-          {sculpture.map(function (ele) {
+          {Calligraphy.map(function (ele) {
             return (
               <div className="category-card">
                 <div className="catergory-image">

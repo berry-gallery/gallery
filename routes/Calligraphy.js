@@ -1,13 +1,12 @@
 const router = require("express").Router();
-let artS = require("../dataBase/data");
+let artCal = require("../dataBase/data");
 
 
 router.route("/").get((req, res) => {
 
-  artS.artdata.find({ category: "Sclupture" })
+  artCal.artdata.find({ category: "calligraphy" })
   
-    .then((Sclupture) => res.json(Sclupture))
-    
+    .then((calligraphy) => res.json(calligraphy))
     .catch((err) => res.status(400).json("error: " + err));
 });
 

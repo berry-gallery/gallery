@@ -4,9 +4,10 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import HomeLayout from './HomePageLayout';
+// import { Art } from '/dataBase/data';
+// import Artphoto from '/Artphoto.jpg';
 
-const backgroundImage =
-'https://images.pexels.com/photos/20967/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940';
+const backgroundImage =require("./artimg.jpg");
 const styles = (theme) => ({
   background: {
     backgroundImage: `url(${backgroundImage})`,
@@ -14,7 +15,7 @@ const styles = (theme) => ({
     backgroundPosition: 'center',
   },
   button: {
-    minWidth: 200,
+    minWidth: 100,
   },
   h5: {
     marginBottom: theme.spacing(4),
@@ -35,23 +36,9 @@ function HomePageHeader(props) {
     <HomeLayout backgroundClassName={classes.background}>
       {/* Increase the network loading priority of the background image. */}
       <img style={{ display: 'none' }} src={backgroundImage} alt="increase priority" />
-      <Typography color="inherit" align="center" variant="h2" marked="center">
-        
-      </Typography>
-      <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
-        Enjoy Beauty of Art
-      </Typography>
-      <Button
-        color="secondary"
-        variant="contained"
-        size="large"
-        className={classes.button}
-        component="a"
-        href="/signup"
-      >
-        Register
-      </Button>
-   
+     
+     
+     
     </HomeLayout>
   );
 }

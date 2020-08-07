@@ -132,9 +132,9 @@ import Container from '@material-ui/core/Container';
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
+      
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        HOUSE OF ART
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
