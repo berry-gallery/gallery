@@ -1,7 +1,7 @@
 
 
 
-// //////************** */
+// // //////************** */
 // import React, { Component } from "react";
 // import axios from "axios";
 // //import mongoose from "mongoose"
@@ -114,7 +114,9 @@
 // }
  /////******* */ 
 
- import React from 'react';
+ import React, { Component } from "react";
+ import axios from "axios";
+
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -162,9 +164,56 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignUp() {
-  const classes = useStyles();
+export default class SignUp extends Component {   
+ 
+  
+  
+  constructor(props) {
+        super(props);
+    
+        this.state = {
+          // name: "",
+          // email: "",
+          // password: "",
+          // mobile: "",
+        };
+    
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+      }
+    
+      handleChange(event) {
+       // console.log( event.target.value,"value")
+      //  console.log( event.target.name,"name")
+        this.state[event.target.name]= event.target.value 
+       // console.log(this.state)
+        this.setState(this.state)
+    
+      }
+    
+      handleSubmit(event) {
+        //console.log(this.state)
+        
+        var that = this
+    
+        axios
+          .post("http://localhost:5000/signUp",that.state )
+    
+          .then((response) => {
+            console.log("hi", response);
+          })
+          .catch((error) => {
+            console.log("registration error", error);
+          });
+    
+        event.preventDefault();
+      }
+  
+    
 
+  render() {
+
+    const classes = useStyles();
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -180,35 +229,31 @@ export default function SignUp() {
             <Grid item xs={12} sm={6}>
               <TextField
                 autoComplete="fname"
-                name="firstName"
+                name="FullName"
                 variant="outlined"
-                required
+                
                 fullWidth
-                id="firstName"
-                label="First Name"
+                id="FullName"
+                label="Full Name"
                 autoFocus
+value={this.state.email}
+            onChange={this.handleChange}
+            required
               />
             </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                id="lastName"
-                label="Last Name"
-                name="lastName"
-                autoComplete="lname"
-              />
-            </Grid>
+            
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
-                required
+                
                 fullWidth
                 id="email"
                 label="Email Address"
                 name="email"
                 autoComplete="email"
+value={this.state.email}
+            onChange={this.handleChange}
+            required
               />
             </Grid>
             <Grid item xs={12}>
@@ -221,10 +266,28 @@ export default function SignUp() {
                 type="password"
                 id="password"
                 autoComplete="current-password"
+value={this.state.password}
+            onChange={this.handleChange}
+           
               />
             </Grid>
-            <Grid item xs={12}>
-              <FormControlLabel
+<Grid item xs={12}>
+               <TextField
+                variant="outlined"
+               
+                fullWidth
+                name="mobile"
+                label="Mobile"
+                type="Mobile"
+                id="Mobile"
+                
+value={this.state.mobile}
+            onChange={this.handleChange}
+           
+          />
+           </Grid>
+             <Grid item xs={12}>
+             <FormControlLabel
                 control={<Checkbox value="allowExtraEmails" color="primary" />}
                 label="I want to receive inspiration, marketing promotions and updates via email."
               />
@@ -254,3 +317,6 @@ export default function SignUp() {
     </Container>
   );
 }
+}
+
+      

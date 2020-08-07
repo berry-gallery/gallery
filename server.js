@@ -6,10 +6,10 @@ const valid = require("express-validator");
 var cors = require("cors");
 const bodyParser = require("body-parser");
 var app = express();
-var Art = require("./dataBase/data");
-var Artest = Art.Artest;
-var ArtWork = Art.Art;
-
+// var Art = require("./dataBase/data");
+// var Artest = Art.Artest;
+// var ArtWork = Art.Art;
+const ceramic = require("./routes/Ceramic");
 //const InitiateMongoServer = require("./config/db");//as tutorial do
 //const config = require('../config/config');
 // Initiate Mongo Server //tutorial
@@ -107,9 +107,10 @@ app.put("/Profile", function(req, res) {
 app.get("/data", (req, res) => {
   res.json({ message: "data base working" });
 });
+app.use("",ceramic);
 //connect to MongoDB
 const mongoURI =
-  "mongodb+srv://berry:berry123@gallerycluster.9kcs4.mongodb.net/gallerycluster?retryWrites=true&w=majority";
+  "mongodb+srv://berry:berry@gallerycluster.9kcs4.mongodb.net/gallerycluster?retryWrites=true&w=majority";
 
 mongoose
   .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })

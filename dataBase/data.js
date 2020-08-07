@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const arts = require("./artData.json");
-const artest = require("./ArtestData.json");
+// const arts = require("./artData.json");
+// const artest = require("./ArtestData.json");
 
 
 
@@ -37,21 +37,21 @@ const ArtWorkSchema = new Schema({
 
 
 // //To Save://///
-let save = (users) => {};
+// let save = (users) => {};
 
-//Function to populate category  from JSON file
-let saveSt = () => {
-  for (var i = 0; i < arts.length; i++) {
-    var partOfarts = new Stuff({
-      category: arts[i].category,
-      title: arts[i].title,
-      img: arts[i].img,
-      price: arts[i].price,
+// //Function to populate category  from JSON file
+// let saveSt = () => {
+//   for (var i = 0; i < arts.length; i++) {
+//     var partOfarts = new Stuff({
+//       category: arts[i].category,
+//       title: arts[i].title,
+//       img: arts[i].img,
+//       price: arts[i].price,
       
-    });
-    partOfarts.save();
-  }
-};
+//     });
+//     partOfarts.save();
+//   }
+// };
 
 // var r = new Recipe();
 
@@ -60,10 +60,10 @@ let saveSt = () => {
 
 // r.save()
 
-var Artest = mongoose.model("artest","Artest", ArtestSchema);
-var Art = mongoose.model("arts","Art", ArtWorkSchema);
+var Artest = mongoose.model("Artest", ArtestSchema);
+var Art = mongoose.model("Art", ArtWorkSchema);
 
 module.exports = { Artest: Artest, Art: Art };
 
-module.exports.save = save;
-module.exports.saveSt = saveSt;
+// module.exports.save = save;
+// module.exports.saveSt = saveSt;
