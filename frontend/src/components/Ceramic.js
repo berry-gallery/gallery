@@ -2,7 +2,7 @@
 ////////////////////////////********** */
 
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import axios from "axios";
 
 export default class Ceramic extends Component {
@@ -19,13 +19,17 @@ export default class Ceramic extends Component {
     const that = this;
 
     axios
-      .get("http://localhost:5000/Ceramic/")
+      .get("http://localhost:5000/Ceramic")
       .then((response) => {
+        console.log(response);
+      
         that.setState({ ceramics: response.data });
       })
       .catch((err) => {
         console.log(err);
+
       });
+      console.log(this.state.ceramics)
   }
 
   render() {
@@ -41,6 +45,7 @@ export default class Ceramic extends Component {
                   <img src={ele.img} />
                 </div>
                 <div className="category-info">
+                  
                   <a>title: {ele.title} </a>
                   <br />
                   <a>description:{ele.description}</a>

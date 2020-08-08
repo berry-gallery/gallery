@@ -11,7 +11,7 @@ export default class Calligraphy extends Component {
     super(props);
     
     this.state = {
-      ceramics: [],
+      Calligraphys: [],
     };
   }
 

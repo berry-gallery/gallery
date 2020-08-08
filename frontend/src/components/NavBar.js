@@ -46,6 +46,9 @@ export default function ButtonAppBar() {
           <Button color="inherit" href="AboutUs" className={classes.title}>
             About Us
           </Button>
+          <Button color="inherit" href="ContactUs" className={classes.title}>
+            contact Us
+          </Button>
           <Button color="inherit" href="SignIn">
             Sign In
           </Button>

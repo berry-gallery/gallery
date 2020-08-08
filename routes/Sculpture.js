@@ -1,14 +1,14 @@
-const router = require("express").Router();
-let artS = require("../dataBase/data");
+// const router = require("express").Router();
+// let artS = require("../dataBase/data");
 
 
-router.route("/").get((req, res) => {
+// router.route("/sculpture").get((req, res) => {
 
-  artS.arts.find({ category: "Sculpture" })
+//   artS.Art.find({ category: req.params.category})//try this . 
   
-    .then((Sculpture) => res.json(Sculpture))
+//     .then((Sculpture) => res.json(Sculpture))
     
-    .catch((err) => res.status(400).json("error: " + err));
-});
+//     .catch((err) => res.status(400).json("error: " + err));
+// });
 
-module.exports = router;
+// module.exports = router;

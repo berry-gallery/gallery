@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 //import { Link } from "react-router-dom";
 import axios from "axios";
+import Typography from "@material-ui/core/Typography";
 
 export default class AboutUs extends Component {
 
@@ -30,13 +31,17 @@ export default class AboutUs extends Component {
 
 
   render() {
-    return <h2> Art of House 
-    Place of Beauty  
-   Gallery full of Color, Creativity and Love... 
-    It is a place to display Fine Arts which contains Painting, Ceramic, Sculpture and Modern Arts (Abstract, Mixed Media, Digital Arts and Acrylic pouring).
+    return <div>
+      <h1> House Art of  </h1>
+      <h2> Place of Beauty </h2> <br></br>
+         Gallery full of Color, Creativity and Love... <br></br>
+    It is a place to display Fine Arts which contains Painting, Ceramic, Sculpture<br></br>
+     and Modern Arts (Abstract, Mixed Media, Digital Arts and Acrylic pouring).<br></br>
    This platform provides an easy way to view the latest artworks and a way to communicate with their owners.
+   <br></br>
    Soon you will be able to purchase these works through our platform
-    </h2>;
+   </div> ;
+    
   }
 }
 

@@ -198,28 +198,28 @@ function ArtCategories(props) {
       url:
         "https://images.pexels.com/photos/1102292/pexels-photo-1102292.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       title: "Ceramic",
-      width: "50%",
+      width: "32%",
       purl: "./Ceramic",
     },
     {
       url:
         "https://images.pexels.com/photos/2900935/pexels-photo-2900935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       title: "Painting",
-      width: "50%",
+      width: "36%",
       purl: "Painting",
     },
     {
       url:
         "https://i.pinimg.com/564x/95/9b/d3/959bd3dd4341c37904b4c715fcdee3c6.jpg",
       title: "Modern Art",
-      width: "50%",
+      width: "32%",
       purl: "./Modern Art",
     },
     {
       url:
         "https://images.pexels.com/photos/3738123/pexels-photo-3738123.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       title: "Sculpture",
-      width: "50%",
+      width: "32%",
       purl: "./Sculpture",
     },
     {

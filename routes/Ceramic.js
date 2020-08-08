@@ -1,13 +1,12 @@
-const router = require("express").Router();
-let artC = require("../dataBase/data");
+// const router = require("express").Router();
+// let artC = require("./dataBase/data");
 
+// router.route("/ceramic").get((req, res) => {
+//   console.log("hi");
+//   artC.Art.find({ category: "ceramic"})
 
-router.route("/ceramic").get((req, res) => {
+//     .then((Ceramic) => res.json(Ceramic))
+//     .catch((err) => res.status(400).json("error: " + err));
+// });
 
-  artC.Art.find({ category: "ceramic" })
-  
-    .then((Ceramic) => res.json(Ceramic))
-    .catch((err) => res.status(400).json("error: " + err));
-});
-
-module.exports = router;
+// module.exports = router;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import axios from "axios";
 
 export default class Painting extends Component {
@@ -16,7 +16,7 @@ export default class Painting extends Component {
     const that = this;
 
     axios
-      .get("http://localhost:5000/Painting/")
+      .get("http://localhost:5000/Painting")
       .then((response) => {
         that.setState({ paintings: response.data });
       })

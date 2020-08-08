@@ -13,7 +13,7 @@ const ArtestSchema = new Schema({
   mobile: { type: Number, required: true },
   location: { type: String, required: false },
   img: { type: String, required: false },
-  category :{ type: String, required: false },
+  category :{ type: String, required: false }
   
 });
 
@@ -22,14 +22,14 @@ const ArtestSchema = new Schema({
 //{type: Schema.Types.ObjectId, ref: 'Ingredient'}
 
 const ArtWorkSchema = new Schema({
-  artID: { type: Number },
+  
   title: { type: String, required: [true, "can't be blank"] },
   description: { type: String, required: true },
   price: { type: Number, required: true },
   img: { type: String, required: true },
-  category :{ type: String, required: false },
+  category :{ type: String, required: false }
 
-  category: [{ type: Schema.Types.ObjectId, ref: "category" }],
+  //category: [{ type: Schema.Types.ObjectId, ref: "category" }],
 });
  
 
@@ -60,10 +60,13 @@ const ArtWorkSchema = new Schema({
 
 // r.save()
 
-var Artest = mongoose.model("Artest", ArtestSchema);
-var Art = mongoose.model("Art", ArtWorkSchema);
+var Artest = mongoose.model("Artest", ArtestSchema,"artests");
+var Art = mongoose.model("Art", ArtWorkSchema,"arts");
 
-module.exports = { Artest: Artest, Art: Art };
+//module.exports.Artest =  Artest ;
+module.exports = { Artest :Artest , Art:Art };
+
+
 
 // module.exports.save = save;
 // module.exports.saveSt = saveSt;
