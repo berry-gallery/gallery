@@ -20,6 +20,7 @@ let artP = require("./dataBase/data");
 let artM = require("./dataBase/data");
 let artS = require("./dataBase/data");
 let artCal = require("./dataBase/data");
+let artF = require("./dataBase/data");
 
 
 
@@ -95,6 +96,18 @@ app.get("/Calligraphy", (req, res) => {
 
     .then((Calligraphy) => 
      res.send(Calligraphy))
+   
+    .catch((err) => res.status(400).json("error: " + err));
+})
+
+
+
+app.get("/Famous", (req, res) => {
+  //console.log("hi");
+  artF.Art.find({ category: "Famous" })
+
+    .then((Famous) => 
+     res.send(Famous))
    
     .catch((err) => res.status(400).json("error: " + err));
 })

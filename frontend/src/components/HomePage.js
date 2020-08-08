@@ -195,43 +195,52 @@ function ArtCategories(props) {
 
   const images = [
     {
+     
+        url:
+          "https://modo3.com/thumbs/fit630x300/216695/1549959013/%D8%A3%D9%87%D9%85_%D8%A3%D8%B9%D9%85%D8%A7%D9%84_%D9%81%D8%A7%D9%86_%D8%AC%D9%88%D8%AE.jpg",
+        title: "FamousArtWorks",
+        width: "100%",
+        purl: "./Famous",
+      },
+      {
       url:
         "https://images.pexels.com/photos/1102292/pexels-photo-1102292.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       title: "Ceramic",
-      width: "32%",
+      width: "50%",
       purl: "./Ceramic",
     },
     {
       url:
         "https://images.pexels.com/photos/2900935/pexels-photo-2900935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       title: "Painting",
-      width: "36%",
+      width: "50%",
       purl: "Painting",
     },
     {
       url:
         "https://i.pinimg.com/564x/95/9b/d3/959bd3dd4341c37904b4c715fcdee3c6.jpg",
       title: "Modern Art",
-      width: "32%",
+      width: "50%",
       purl: "./Modern Art",
     },
     {
       url:
         "https://images.pexels.com/photos/3738123/pexels-photo-3738123.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       title: "Sculpture",
-      width: "32%",
+      width: "50%",
       purl: "./Sculpture",
     },
     {
       url:
         "https://images.pexels.com/photos/3139298/pexels-photo-3139298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       title: "Calligraphy",
-      width: "50%",
+      width: "90%",
       purl: "./Calligraphy",
     },
   ];
 
   return (
+    
     <div className="n">
       <HomePageHeader />
       <Container className={classes.root} component="section">
